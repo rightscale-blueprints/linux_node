@@ -1,9 +1,9 @@
-PHP App Server (Chef) Blueprint
+Linux Node (Chef) Blueprint
 ===============================
 
 #Description
 
-A RightScale Blueprint for a PHP application server.
+A RightScale Blueprint for a Linux Node.
 
 #Requirements
 
@@ -18,25 +18,13 @@ See the Quick Start below to get started.
 
 The following core cookbooks are included:
 
-* application
-* application_php
-* linux_node
-
-Additional/depends cookbooks:
-
-* apache2
-* build-essential
-* chef_handler
-* dmg
-* git
-* mysql
-* openssl
-* php
-* runit
-* subversion
-* windows
-* xml
-* yum
+* chef
+* cron
+* librarian
+* ntp
+* resolver
+* sudo
+* system
 
 See the `Cheffile.lock` for details on their upstream sources.
 
