@@ -13,24 +13,6 @@ cookbook 'librarian',
    :path => 'cookbooks/librarian',
    :ref => 'master'
   
-cookbook 'system',
-   :git => 'https://github.com/flaccid/cookbooks',
-   :path => 'cookbooks/system',
+cookbook 'git',
+   :git => 'https://github.com/opscode-cookbooks/git',
    :ref => 'master'
-
-cookbook 'resolver',
-   :git => 'https://github.com/flaccid/cookbooks',
-   :path => 'cookbooks/resolver',
-   :ref => 'master'
-
-cookbook 'cron',
-  :git => 'https://github.com/opscode-cookbooks/cron',
-  :ref => 'master'
-
-cookbook 'ntp',
-  :git => 'https://github.com/opscode-cookbooks/ntp',
-  :ref => 'master'
-   
-cookbook 'sudo',
-  :git => 'https://github.com/opscode-cookbooks/sudo',
-  :ref => 'master'
