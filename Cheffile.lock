@@ -1,0 +1,63 @@
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/chef
+  ref: master
+  sha: af676e08ec7991def548c6dfebcb81c4520e06c9
+  specs:
+    chef (0.1.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/librarian
+  ref: master
+  sha: ade08cc1a7316e70ed77835764d304fe96600902
+  specs:
+    librarian (0.1.0)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/resolver
+  ref: master
+  sha: af676e08ec7991def548c6dfebcb81c4520e06c9
+  specs:
+    resolver (0.8.2)
+
+GIT
+  remote: https://github.com/flaccid/cookbooks
+  path: cookbooks/system
+  ref: master
+  sha: af676e08ec7991def548c6dfebcb81c4520e06c9
+  specs:
+    system (0.0.1)
+      cron (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/cron
+  ref: master
+  sha: 45fde9f0cddc4f7a20d53f5938612b6a886359e7
+  specs:
+    cron (1.2.2)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/ntp
+  ref: master
+  sha: 9b8c32f7187fa54dc190d93db5c3f737055155ba
+  specs:
+    ntp (1.3.2)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/sudo
+  ref: master
+  sha: 5c3238e1db680e80ba60a39d40765653babb752a
+  specs:
+    sudo (2.0.4)
+
+DEPENDENCIES
+  chef (>= 0)
+  cron (>= 0)
+  librarian (>= 0)
+  ntp (>= 0)
+  resolver (>= 0)
+  sudo (>= 0)
+  system (>= 0)
+
