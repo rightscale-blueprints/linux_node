@@ -15,18 +15,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+directory node['librarian']['chef']['cookbook_path'] do
+  recursive true
+end
+
 if node['librarian']['chef']['cheffile']
-  remote_file "#{node['librarian']['chef']['cookbook_path']}/Cheffile" do
+  remote_file "/tmp/Cheffile" do
     source node['librarian']['chef']['cheffile']
   end
 else
   raise "No Cheffile specified!"
 end
 
-directory node['librarian']['chef']['cookbook_path'] do
-  recursive true
-end
-
 execute "fetch_cookbooks" do
   command "librarian-chef install --clean --verbose --path #{node['librarian']['chef']['cookbook_path']}"
+  cwd "/tmp"
 end

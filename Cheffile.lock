@@ -7,7 +7,7 @@ SITE
     runit (1.1.2)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
-    windows (1.8.4)
+    windows (1.8.6)
       chef_handler (>= 0.0.0)
     yum (2.2.0)
 
@@ -15,7 +15,7 @@ GIT
   remote: https://github.com/flaccid/cookbooks
   path: cookbooks/chef
   ref: master
-  sha: ade08cc1a7316e70ed77835764d304fe96600902
+  sha: 4a014cc023ccd32aa55e94b1406667474bbeba6d
   specs:
     chef (0.1.0)
 
@@ -23,7 +23,7 @@ GIT
   remote: https://github.com/flaccid/cookbooks
   path: cookbooks/librarian
   ref: master
-  sha: ade08cc1a7316e70ed77835764d304fe96600902
+  sha: 4a014cc023ccd32aa55e94b1406667474bbeba6d
   specs:
     librarian (0.1.0)
 
