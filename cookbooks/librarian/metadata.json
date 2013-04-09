@@ -21,7 +21,7 @@
   "replacing": {
   },
   "attributes": {
-    "librarian/cookbook_path": {
+    "librarian/chef/cookbook_path": {
       "display_name": "Librarian cookbooks path",
       "description": "The folder to download/manage cookbooks with librarian-chef.",
       "required": "optional",
@@ -40,7 +40,7 @@
       "calculated": false,
       "type": "string"
     },
-    "librarian/cheffile": {
+    "librarian/chef/cheffile": {
       "display_name": "Librarian Cheffile",
       "description": "The Cheffile to use to download/manage cookbooks with librarian-chef (this can be a remote URL to a Cheffile).",
       "required": "required",
