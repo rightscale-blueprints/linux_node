@@ -68,6 +68,22 @@
       ],
       "calculated": false,
       "type": "string"
+    },
+    "chef/parent": {
+      "display_name": "Chef parent",
+      "description": "The Chef platform this cookbook is used in.",
+      "default": "vagrant",
+      "choice": [
+        "rightscale",
+        "vagrant"
+      ],
+      "recipes": [
+        "librarian::default",
+        "librarian::download_cookbooks"
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional"
     }
   },
   "groupings": {
