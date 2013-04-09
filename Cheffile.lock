@@ -23,7 +23,7 @@ GIT
   remote: https://github.com/flaccid/cookbooks
   path: cookbooks/librarian
   ref: master
-  sha: 42373ae58cc06637d02153a234f1efad70e1f264
+  sha: 47146f968fbd834b0703859397d73226295bd3ec
   specs:
     librarian (0.1.0)
       git (>= 0.0.0)
