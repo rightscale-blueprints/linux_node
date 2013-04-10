@@ -34,6 +34,7 @@ ruby_block "run_chef_solo" do
   end
 end
 
-log "print_chef_solo_output" do
-  message "#{File.read(node['chef']['solo']['log_file'])}"
+log_file_path = Pathname(node['chef']['solo']['log_file'])
+ruby_block "print_chef_solo_output" do
+  block { Chef::Log.info log_file_path.read }
 end
