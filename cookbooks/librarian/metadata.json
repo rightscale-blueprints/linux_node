@@ -8,6 +8,7 @@
   "platforms": {
   },
   "dependencies": {
+    "chef": ">= 0.0.0",
     "git": ">= 0.0.0"
   },
   "recommendations": {
@@ -79,7 +80,23 @@
       ],
       "recipes": [
         "librarian::default",
-        "librarian::download_cookbooks"
+        "librarian::install"
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional"
+    },
+    "chef/install_method": {
+      "display_name": "Chef install method",
+      "description": "The method to install Chef with (omnibus or package).",
+      "default": "omnibus",
+      "recipes": [
+        "librarian::default",
+        "librarian::install"
+      ],
+      "choice": [
+        "omnibus",
+        "package"
       ],
       "calculated": false,
       "type": "string",
